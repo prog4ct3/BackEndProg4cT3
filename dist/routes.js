@@ -8,6 +8,7 @@ class Routes {
     }
     routes(app) {
         this.usuarioRoutes.routes(app);
+        this.tipoHabitacionRoutes.routes(app);
     }
 }
 exports.Routes = Routes;
