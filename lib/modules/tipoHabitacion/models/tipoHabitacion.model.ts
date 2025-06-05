@@ -4,7 +4,10 @@ import * as mongoose from 'mongoose';
 
 const Schema = mongoose.Schema;
 
-
+let validRoles = {    
+    values: ROLES,
+    message: '{VALUE} is not a valid role'
+};
 
 export interface ITipoHabitacion extends mongoose.Document {  
     tipoHabitacion: string;
