@@ -27,7 +27,7 @@ class TipoHabitacionController {
         this.obtenerTipoHabitacions = (req, res) => {
             tipoHabitacion_model_1.default.find()
                 .then(tipoHabitaciones => {
-                res.statu(200).json({
+                res.status(200).json({
                     ok: true,
                     tipoHabitaciones: tipoHabitaciones
                 });

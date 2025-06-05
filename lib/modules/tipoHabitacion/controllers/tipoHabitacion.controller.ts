@@ -31,7 +31,7 @@ export class TipoHabitacionController {
     obtenerTipoHabitacions = (req: Request, res: Response) => {
         TipoHabitacion.find()
         .then(tipoHabitaciones => {
-            res.statu(200).json({
+            res.status(200).json({
                 ok: true,
                 tipoHabitaciones: tipoHabitaciones
             });
