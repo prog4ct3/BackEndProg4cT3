@@ -30,10 +30,10 @@ export class TipoHabitacionController {
 
     obtenerTipoHabitacions = (req: Request, res: Response) => {
         TipoHabitacion.find()
-        .then(tipoHabitacions => {
+        .then(tipoHabitaciones => {
             res.statu(200).json({
                 ok: true,
-                tipoHabitacions: tipoHabitacions
+                tipoHabitaciones: tipoHabitaciones
             });
         })
         .catch(error => {
